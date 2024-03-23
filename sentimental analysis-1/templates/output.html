@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT</title>
+    <style media="screen">
+    body {
+        background-color: #f0f0f0; /* Light gray background */
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    }
+    .container {
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+    h2 {
+        color: #1e90ff; /* Bright blue heading */
+        text-align: center;
+        margin-bottom: 30px; /* Increased margin bottom */
+    }
+    p {
+        color: #333; /* Dark text color */
+        font-size: 18px; /* Larger font size */
+        line-height: 1.6; /* Improved readability */
+        text-align: center;
+    }
+    .prediction {
+        background-color: #ffc107; /* Yellow background for prediction */
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .prediction h2 {
+        color: #fff; /* White text color */
+        font-size: 24px; /* Larger font size for prediction */
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction Result</h2>
+        <div class="prediction">
+            <h2>{{ prediction }}</h2>
+        </div>
+    </div>
+</body>
+</html>
