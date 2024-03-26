@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style media="screen">
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font family */
+        color: #000; /* Changed text color to black */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+    }
+    h1 {
+        color: #f18809; /* Changed heading color to orange */
+        text-align: center;
+        margin-top: 30px; /* Adjusted margin-top for better spacing */
+        font-size: 36px; /* Increased font size */
+    }
+    label {
+        color: #b207c5; /* Changed label color to orange */
+        text-align: left;
+        display: block;
+        font-size: 20px; /* Increased font size */
+        margin-top: 15px; /* Adjusted margin-top for better spacing */
+    }
+    input[type="text"],
+    input[type="submit"],
+    textarea {
+        width: 100%; /* Set width to 100% for better responsiveness */
+        padding: 10px; /* Increased padding */
+        margin-top: 10px; /* Adjusted margin-top for better spacing */
+        font-size: 16px; /* Increased font size */
+        font-weight: 300;
+        box-sizing: border-box;
+        border-radius: 10px; /* Increased border radius */
+        border: 1px solid #FFA500; /* Changed border color to orange */
+        outline: none;
+        color: #000; /* Changed text color to black */
+        background-color: rgba(255, 255, 255, 0.1); /* Changed background color to semi-transparent white */
+    }
+    input[type="submit"] {
+        background-color: #FFA500; /* Changed button background color to orange */
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
+    input[type="submit"]:hover {
+        background-color: #FF6347; /* Darkened button color on hover */
+    }
+    form {
+        width: 80%; /* Adjusted width for better responsiveness */
+        max-width: 600px; /* Added max-width for better responsiveness */
+        margin: 0 auto; /* Center align the form */
+        padding: 30px; /* Increased padding */
+        border-radius: 20px; /* Increased border radius */
+    }
+    </style>
+</head>
+<body>
+    <h1>Sentiment Analysis on FlipKart Product Reviews</h1>
+    <form action="/prediction" method="post">
+        <label for="customer_name">Your Name:</label>
+        <input type="text" id="customer_name" name="customer_name" placeholder="Enter your name" required>
+        <label for="test_string">Enter your product review:</label>
+        <textarea id="test_string" name="test_string" placeholder="Write your review here..." required></textarea>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
